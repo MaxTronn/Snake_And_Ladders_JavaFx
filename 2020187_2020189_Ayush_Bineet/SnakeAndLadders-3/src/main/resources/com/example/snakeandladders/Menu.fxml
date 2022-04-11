@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snakeandladders.MenuController">
+   <children>
+      <ImageView fx:id="menuWindow" fitHeight="324.0" fitWidth="540.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@menu1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playWindow" fitHeight="122.0" fitWidth="420.0" layoutX="-10.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@menu2.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="playPane" layoutX="67.0" layoutY="308.0" onMouseClicked="#playGame" prefHeight="74.0" prefWidth="269.0" />
+   </children>
+</Pane>

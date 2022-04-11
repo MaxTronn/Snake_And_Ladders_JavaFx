@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snakeandladders.HelloController">
+   <children>
+      <Pane fx:id="returnPane" layoutX="95.0" layoutY="260.0" onMouseClicked="#returnBack" prefHeight="102.0" prefWidth="107.0" />
+      <ImageView fx:id="midstopWindow" fitHeight="344.0" fitWidth="580.0" layoutX="16.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@midEnd.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="endPane" layoutX="248.0" layoutY="256.0" onMouseClicked="#endGame" prefHeight="102.0" prefWidth="264.0" />
+   </children>
+</Pane>

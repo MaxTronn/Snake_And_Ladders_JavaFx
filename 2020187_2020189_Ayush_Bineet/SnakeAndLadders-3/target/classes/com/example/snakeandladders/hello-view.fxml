@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="layout" maxHeight="750" maxWidth="650" minHeight="750" minWidth="650" prefHeight="750" prefWidth="650" style="-fx-background-color: #bb1e18;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snakeandladders.HelloController">
+   <children>
+  <ImageView fx:id="boardImage" fitHeight="500.0" fitWidth="400.0" layoutX="125.0" layoutY="125.0" opacity="0.8" pickOnBounds="true">
+     <image>
+        <Image url="@Board.jpg" />
+     </image>
+  </ImageView>
+      <ImageView fx:id="playerBlue" fitHeight="35.0" fitWidth="20.0" layoutX="127.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@blue_token-removebg-preview.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="playerGreen" fitHeight="33.0" fitWidth="20.0" layoutX="147.0" layoutY="627.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@green_token-removebg-preview.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="greenTokenImage" fitHeight="69.0" fitWidth="114.0" layoutX="356.0" layoutY="677.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Player2_Image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blueTokenImage" fitHeight="58.0" fitWidth="113.0" layoutX="178.0" layoutY="677.0" pickOnBounds="true">
+         <image>
+            <Image url="@Player1_Image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="diceImage" fitHeight="72.0" fitWidth="79.0" layoutX="291.0" layoutY="669.0" onMouseClicked="#rollDice" onMouseMoved="#congrats" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Dice_5.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yellowArrow" fitHeight="41.0" fitWidth="46.0" layoutX="303.0" layoutY="627.0" pickOnBounds="true">
+         <image>
+            <Image url="@arrow-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

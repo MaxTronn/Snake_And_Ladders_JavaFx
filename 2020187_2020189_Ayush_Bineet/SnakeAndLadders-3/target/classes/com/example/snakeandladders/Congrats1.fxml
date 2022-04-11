@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snakeandladders.CongratsController">
+    <children>
+        <ImageView fx:id="congratsWindow" fitHeight="400.0" fitWidth="400.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@player1_cong.jpg" />
+            </image>
+        </ImageView>
+        <Pane fx:id="replayPane" layoutX="251.0" layoutY="330.0" onMouseClicked="#playAgain" opacity="0.0" prefHeight="50.0" prefWidth="129.0" style="-fx-background-color: #00FF00;" />
+        <Pane fx:id="menuPane" layoutX="62.0" layoutY="335.0" onMouseClicked="#goToMenu" opacity="0.0" prefHeight="40.0" prefWidth="123.0" style="-fx-background-color: #00FF00;" />
+    </children>
+</Pane>
